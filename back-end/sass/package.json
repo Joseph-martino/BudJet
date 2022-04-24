@@ -1,0 +1,13 @@
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "sass": "node-sass -w ../application/src/main/webapp/ressources/scss -o ../application/src/main/webapp/ressources/css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
