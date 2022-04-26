@@ -1,0 +1,200 @@
+@font-face {
+  font-family: "Inter Extra Light";
+  src: url("../fonts/Inter/Inter-ExtraLight.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Inter Bold";
+  src: url("../fonts/Inter/Inter-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Roboto Bold";
+  src: url("../fonts/roboto/Roboto-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Roboto light";
+  src: url("../fonts/roboto/Roboto-Light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Roboto thin";
+  src: url("../fonts/roboto/Roboto-Thin.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Roboto-LightItalic";
+  src: url("../fonts/roboto/Roboto-LightItalic.ttf") format("truetype"); }
+
+html, body {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+@font-face {
+  font-family: "Inter Extra Light";
+  src: url("../fonts/Inter/Inter-ExtraLight.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Inter Bold";
+  src: url("../fonts/Inter/Inter-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Roboto Bold";
+  src: url("../fonts/roboto/Roboto-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Roboto light";
+  src: url("../fonts/roboto/Roboto-Light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Roboto thin";
+  src: url("../fonts/roboto/Roboto-Thin.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Roboto-LightItalic";
+  src: url("../fonts/roboto/Roboto-LightItalic.ttf") format("truetype"); }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 20px; }
+
+.logo {
+  height: 50px;
+  width: auto;
+  margin-left: 30px; }
+
+ul {
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+  list-style: none;
+  align-items: center; }
+
+a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Roboto thin"; }
+
+.blue-button {
+  background-color: #3848D3;
+  color: white;
+  padding: 4px 3px 3px 13px;
+  border-radius: 60px;
+  text-decoration: none;
+  font-weight: bold; }
+
+.login-signup-link {
+  display: flex;
+  align-items: center; }
+
+.profile-icon-container {
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  margin-left: 20px;
+  background-color: white; }
+  .profile-icon-container img {
+    position: absolute;
+    top: 8%;
+    left: 15%; }
+
+body {
+  display: flex; }
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto; }
+
+form input {
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: #efecec;
+  margin: 10px 0 10px 0; }
+
+label, .bottom-message {
+  font-family: "Roboto light";
+  color: #717171; }
+
+.form-panel {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%; }
+
+.form-panel h1 {
+  color: #0772EF;
+  text-transform: uppercase;
+  font-family: "Roboto Bold";
+  font-size: 3rem;
+  margin: 0; }
+
+.form-panel h2 {
+  font-family: "Roboto thin";
+  font-size: 1.2rem;
+  margin: 30px 0 40px 0; }
+
+.form-panel h1, h2, p {
+  text-align: center; }
+
+.picture-panel {
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.picture-panel-login {
+  background-image: url("../images/photos/man-on-cliff.png"); }
+
+.picture-panel-sign-up {
+  background-image: url("../images/photos/girls-dancing.png"); }
+
+.text-container {
+  width: 44%;
+  color: white; }
+
+.text-container h1 {
+  text-align: center;
+  font-family: "Roboto Bold";
+  font-size: 2.3rem;
+  text-transform: uppercase; }
+
+.text-container h2 {
+  font-family: "Inter extra Light"; }
+
+.text-container p {
+  font-family: "Inter extra Light"; }
+
+.rgpd-label {
+  font-family: "Roboto-LightItalic";
+  font-size: 0.8rem; }
+
+.validation-input-container {
+  display: flex;
+  justify-content: center; }
+
+#validation-input {
+  background-color: #0772ef;
+  color: white;
+  font-family: "Roboto Bold";
+  width: 70%;
+  font-size: 1.2em;
+  margin: 20px; }
+
+.bottom-link {
+  color: #0772ef;
+  text-decoration: none;
+  font-family: "Roboto Bold"; }
+
+header {
+  display: block; }

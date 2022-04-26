@@ -1,0 +1,61 @@
+@import "fonts";
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+    margin-left: 30px;
+}
+
+ul {
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+}
+
+a{
+	color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Roboto thin";
+}
+
+.blue-button {
+    background-color: #3848D3;
+    color: white;
+    padding: 4px 3px 3px 13px;
+    border-radius: 60px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-signup-link {
+	display: flex;
+    align-items: center;
+}
+
+.profile-icon-container {
+	width: 45px;
+    height: 45px;
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+    margin-left: 20px;
+    background-color: white;
+	    img {
+		position: absolute;
+	    top: 8%;
+	    left: 15%;
+	}
+}

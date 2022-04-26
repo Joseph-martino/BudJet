@@ -1,0 +1,105 @@
+@font-face {
+  font-family: "Inter Extra Light";
+  src: url("../fonts/Inter/Inter-ExtraLight.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Inter Bold";
+  src: url("../fonts/Inter/Inter-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Roboto Bold";
+  src: url("../fonts/roboto/Roboto-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Roboto light";
+  src: url("../fonts/roboto/Roboto-Light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Roboto thin";
+  src: url("../fonts/roboto/Roboto-Thin.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Roboto-LightItalic";
+  src: url("../fonts/roboto/Roboto-LightItalic.ttf") format("truetype"); }
+
+html, body {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+@font-face {
+  font-family: "Inter Extra Light";
+  src: url("../fonts/Inter/Inter-ExtraLight.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Inter Bold";
+  src: url("../fonts/Inter/Inter-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Roboto Bold";
+  src: url("../fonts/roboto/Roboto-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Roboto light";
+  src: url("../fonts/roboto/Roboto-Light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Roboto thin";
+  src: url("../fonts/roboto/Roboto-Thin.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Roboto-LightItalic";
+  src: url("../fonts/roboto/Roboto-LightItalic.ttf") format("truetype"); }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 20px; }
+
+.logo {
+  height: 50px;
+  width: auto;
+  margin-left: 30px; }
+
+ul {
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+  list-style: none;
+  align-items: center; }
+
+a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Roboto thin"; }
+
+.blue-button {
+  background-color: #3848D3;
+  color: white;
+  padding: 4px 3px 3px 13px;
+  border-radius: 60px;
+  text-decoration: none;
+  font-weight: bold; }
+
+.login-signup-link {
+  display: flex;
+  align-items: center; }
+
+.profile-icon-container {
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  margin-left: 20px;
+  background-color: white; }
+  .profile-icon-container img {
+    position: absolute;
+    top: 8%;
+    left: 15%; }
