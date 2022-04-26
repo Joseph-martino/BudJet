@@ -1,0 +1,9 @@
+@import "colours";
+
+@mixin button($color){
+    background-color: $color;
+    color: $white;
+    &:hover {
+    background-color: darken($color, 20%);
+    }
+}

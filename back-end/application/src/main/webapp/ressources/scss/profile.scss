@@ -1,3 +1,158 @@
 @import "common/fonts";
 @import "common/reset";
 @import "common/header";
+@import "common/colours";
+@import "common/mixins";
+
+.main-banner-container {
+    background-image: url("../images/banners/profile-banner.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    height: 600px;
+    align-items: center;
+    position: relative;
+}
+
+.group-budget-display-container {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+    h2 {
+        font-family: "Inter regular";
+        color: white;
+    }
+    img {
+        width: 20%;
+    }
+    p {
+        color: #717171;
+    }
+}
+
+.group-budget-amount-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+    border: solid 2px #CFCFCF;
+    -webkit-box-shadow: 6px 6px 13px 0px rgba(0,0,0,0.8); 
+    box-shadow: 6px 6px 13px 0px rgba(0,0,0,0.8);
+    width: 75%;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.profile-avatar-container {
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    border: solid 5px black;
+    position: absolute;
+    bottom: -25%;
+    left: calc(50% - 150px);
+}
+
+.avatar-input-label {
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+}
+
+#avatar-container {
+    height: 100%;
+    background-color: #717171;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.user-informations-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.user-options-card {
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: 0 auto;
+    -webkit-box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.8); 
+    box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.8);
+    border-radius: 15px;
+    align-items: center;
+}
+
+.option-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    img {
+        width: 70%;
+    }
+}
+
+.dashboard-container {
+    h2 {
+        text-align: center;
+    }
+}
+
+.grid-informations-container {
+    width: 80%;
+    margin: 0 auto;
+    h2 {
+        text-align: center;
+    }
+}
+
+.grid-nav-bar-buttons-list {
+    display: flex;
+    list-style: none;
+    li {
+        width: 25%;
+        button {
+            width: 100%;
+            padding: 40px;
+            border-top-left-radius: 30px 30px;
+            border-top-right-radius: 30px 30px;
+            font-size: 1.6rem;
+            cursor: pointer;
+        }
+    }
+}
+
+.user-budget-button {
+    @include button($lightSteelBlue);
+}
+
+.user-spending-button {
+    @include button($vistaBlue);
+}
+
+.group-budget-button {
+    @include button($blueGray);
+}
+
+.group-spending-button {
+    @include button($cyanBlueAzure);
+}
+
+form input {
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: #efecec;
+    margin: 10px 0 10px 0;
+}

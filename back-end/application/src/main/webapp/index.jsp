@@ -1,9 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
+<meta charset="UTF-8">
 <link rel="stylesheet" href="ressources/css/index.css">
 <link rel="icon" type="image/png" href="ressources/images/logo/title-logo.png">
 <title>Budjet</title>
@@ -25,7 +25,7 @@
     </div>
 
         <section class="first-section">
-            <h2 class="subtitle">A quoi �a sert ?</h2>
+            <h2 class="subtitle">A quoi ï¿½a sert ?</h2>
             <div class="first-section-text-part">
                 <div class="side-line"></div>
                 <div class="first-section-text-container">
@@ -52,7 +52,7 @@
             <div class="cards-container">
                 <div class="card">
                     <img src="/ressources/images/photos/group-of-firends.png" alt="group-of-friends-sit">
-                    <h3>Mutualisez vos d�penses</h3>
+                    <h3>Mutualisez vos dï¿½penses</h3>
                     <div class="horizontale-line"></div>
                     <h4>Lorem ipsum</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada nibh 
@@ -62,7 +62,7 @@
 
                 <div class="card">
                     <img src="/ressources/images/photos/phone-pay.png" alt="phone-pay">
-                    <h3>Mutualisez vos d�penses</h3>
+                    <h3>Mutualisez vos dï¿½penses</h3>
                     <div class="horizontale-line"></div>
                     <h4>Lorem ipsum</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada nibh 
@@ -72,7 +72,7 @@
 
                 <div class="card">
                     <img src="/ressources/images/photos/phone-pay2.png" alt="phone-pay">
-                    <h3>Mutualisez vos d�penses</h3>
+                    <h3>Mutualisez vos dï¿½penses</h3>
                     <div class="horizontale-line"></div>
                     <h4>Lorem ipsum</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada nibh 
@@ -83,7 +83,7 @@
         </section>
 
         <section>
-            <h2>Comment �a marche ?</h2>
+            <h2>Comment ï¿½a marche ?</h2>
             <div class="blue-background-container">
                 <h3>Lorem ipsum</h3>
                 <div class="third-section-text-part">

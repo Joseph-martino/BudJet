@@ -1,7 +1,7 @@
-<nav>
+<nav class="header-nav-bar">
 	<img class="logo" src="ressources/images/logo/logo.png"
 		alt="budjet-logo">
-	<ul>
+	<ul class="header-nav-bar-links-list">
 		<li><a href="#">Accueil</a></li>
 		<li><a href="#">A propos</a></li>
 		<li class="blue-button"><a class="login-signup-link" href="#">Se connecter

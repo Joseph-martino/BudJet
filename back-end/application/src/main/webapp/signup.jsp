@@ -1,10 +1,11 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
 <link rel="stylesheet" href="ressources/css/login-signup.css">
+<link rel="icon" type="image/png" href="ressources/images/logo/title-logo.png">
 <title>Inscription</title>
 </head>
 <body>
@@ -49,6 +50,7 @@
 				href="login.html">ici</a>
 		</p>
 	</section>
+	<%@include file="header.jsp" %> 
 
 </body>
 </html>
