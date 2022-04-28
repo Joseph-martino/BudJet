@@ -100,7 +100,7 @@
                         </div>
                     </div>          
                 </div>
-                <img src="ressources/images/photos/man-looking-his-phone.png" alt="man-looking-his-phone">
+                <img class="third-section-picture" src="ressources/images/photos/man-looking-his-phone.png" alt="man-looking-his-phone">
             </div>
         </section>
 

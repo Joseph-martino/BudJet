@@ -199,6 +199,8 @@ section {
   margin: 0; }
   .banner-text-container h2 {
     font-size: 1.5rem; }
+  .banner-text-container p {
+    margin-bottom: 40px; }
 
 .main-title {
   font-family: Inter Bold;
@@ -282,11 +284,12 @@ section {
 
 .third-section-main-wrapper {
   position: relative; }
-  .third-section-main-wrapper img {
-    position: absolute;
-    bottom: 0;
-    right: 5%;
-    width: 35%; }
+
+.third-section-picture {
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  width: 35%; }
 
 .blue-background-container {
   background-color: RGBA(52, 176, 245, 0.6);

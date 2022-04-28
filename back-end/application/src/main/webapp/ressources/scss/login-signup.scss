@@ -1,4 +1,5 @@
 @import "common/fonts";
+@import "common/colours";
 @import "common/reset";
 @import "common/header";
 
@@ -17,17 +18,18 @@ form input {
     padding: 15px;
     border-radius: 10px;
     border: none;
-    background-color: #efecec;
+    background-color: $brightGray;
     margin: 10px 0 10px 0;
 }
 
 label, .bottom-message {
     font-family: "Roboto light";
-    color: #717171;
+    color: $darkSilver;
 }
 
 .signup-title {
-	margin-top: 160px;
+	margin-top: 135px;
+    margin-bottom: 0;
 }
 
 .login-title {
@@ -42,7 +44,7 @@ label, .bottom-message {
 }
 
 .form-panel h1{
-    color: #0772EF;
+    color: $vividBlue;
     text-transform: uppercase;
     font-family: "Roboto Bold";
     font-size: 3rem;
@@ -51,7 +53,6 @@ label, .bottom-message {
 .form-panel h2{
     font-family: "Roboto thin";
     font-size: 1.2rem;
-    margin: 30px 0 40px 0;
 }
 
 .form-panel h1, h2, p{
@@ -77,7 +78,7 @@ label, .bottom-message {
 
 .text-container {
     width: 44%;
-    color: white;
+    color: $white;
 }
 
 .text-container h1 {
@@ -106,8 +107,8 @@ label, .bottom-message {
 }
 
 #validation-input {
-    background-color: #0772ef;
-    color: white;
+    background-color: $vistaBlue;
+    color: $white;
     font-family: "Roboto Bold";
     width: 70%;
     font-size: 1.2em;
@@ -115,7 +116,7 @@ label, .bottom-message {
 }
 
 .bottom-link{
-    color: #0772ef;
+    color: $vistaBlue;
     text-decoration: none;
     font-family: "Roboto Bold";
 }

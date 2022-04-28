@@ -24,20 +24,19 @@
 		<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
 
 		<form action="signup" method="POST">
-			<label for="group">Groupe:</label> <input type="text" id="group"
-				name="group"> <label for="email-adress">Adresse
-				email:</label> <input type="text" id="email-adress" name="mail"> <label
-				for="password">Mot de passe</label> <input type="password"
-				id="password" name="password"> <label
-				for="password-confirmation">Confirmation mot de passe</label> <input
-				type="password" id="password-confirmation"
-				name="password-confirmation">
-
-
+			<label for="group">Groupe:</label> 
+			<input type="text" id="group"name="group"> 
+			<label for="pseudo">Pseudo:</label> 
+			<input type="text" id="pseudo"name="pseudo">
+			<label for="email-adress">Adresse email:</label> 
+			<input type="text" id="email-adress" name="mail"> 
+			<label for="password">Mot de passe</label> 
+			<input type="password"id="password" name="password"> 
+			<label for="password-confirmation">Confirmation mot de passe</label> 
+			<input type="password" id="password-confirmation" name="password-confirmation">
 			<div class="rgpd-input-container">
-				<input type="checkbox" id="rgpd" name="rgpd"> <label
-					class="rgpd-label" for="rgpd">J'ai lu et et j'accepte les
-					conditions d'utilisations</label>
+				<input type="checkbox" id="rgpd" name="rgpd"> 
+				<label class="rgpd-label" for="rgpd">J'ai lu et et j'accepte les conditions d'utilisations</label>
 			</div>
 
 			<div class="validation-input-container">

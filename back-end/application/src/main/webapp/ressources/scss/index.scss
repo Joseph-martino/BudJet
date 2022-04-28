@@ -29,6 +29,10 @@ section {
     h2 {
         font-size: 1.5rem;
     }
+
+    p {
+        margin-bottom: 40px;
+    }
 }
 
 .main-title {
@@ -127,12 +131,13 @@ section {
 
 .third-section-main-wrapper {
     position: relative;
-    img {
-        position: absolute;
+}
+
+.third-section-picture {
+    position: absolute;
         bottom: 0;
         right: 5%;
-        width: 35%;  
-    }
+        width: 35%; 
 }
 
 .blue-background-container {
