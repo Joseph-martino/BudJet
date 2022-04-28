@@ -45,8 +45,5 @@
 		</div>
 	</section>
 	<%@include file="header.jsp" %> 
-		
-	
-	
 </body>
 </html>

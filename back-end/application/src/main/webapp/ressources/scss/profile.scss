@@ -1,6 +1,7 @@
 @import "common/fonts";
 @import "common/reset";
 @import "common/header";
+@import "common/footer";
 @import "common/colours";
 @import "common/mixins";
 
@@ -246,6 +247,7 @@ table {
     display: flex;
     justify-content: flex-end;
     margin-top: 30px;
+    margin-bottom: 30px;
     button {
         @include button($softRed);
         padding: 15px;

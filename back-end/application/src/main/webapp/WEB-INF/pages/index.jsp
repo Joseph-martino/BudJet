@@ -20,7 +20,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 Malesuada nibh quam nunc venenatis cursus integer amet.
             </p>
-            <a class="blue-button"href="#">Je me lance</a>
+            <a class="main-banner-cta-button"href="#">Je me lance</a>
         </div>
     </div>
 
@@ -80,13 +80,13 @@
                 </div>
             </div>
         </section>
-
+        <div class="margin"></div>
         <section>
             <h2 class="subtitle">Comment ça marche ?</h2>
+            <div class="margin"></div>
             <div class="third-section-main-wrapper">
                 <div class="blue-background-container">
                     <div class="third-section-text-part">
-                        <div class="side-line"></div>
                         <div class="third-section-text-section">
                             <h3>Lorem ipsum</h3>
                             <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -100,11 +100,8 @@
                         </div>
                     </div>          
                 </div>
-
                 <img src="ressources/images/photos/man-looking-his-phone.png" alt="man-looking-his-phone">
-
             </div>
-            
         </section>
 
         <section class="advantages-section">
@@ -150,8 +147,31 @@
                     </div>
                 </div>
             </div>
-
         </section>
-    
+
+        <section>
+            <h2 class="subtitle">Lorem ipsum</h2>
+            <div class="margin"></div>
+            <div class="third-section-main-wrapper">
+                <img class="fourth-section-picture" src="ressources/images/photos/hand-holding-phone.png" alt="hand-holding-phone">
+                <div class="fourth-section-blue-background-container">
+                    <div class="third-section-text-part">
+                        <div class="third-section-text-section">
+                            <h3>Lorem ipsum</h3>
+                            <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Malesuada <span class="grey-bold"><strong>nibh quam nunc</strong></span> venenatis cursus integer amet.
+                            </p>
+        
+                            <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing 
+                                <span class="grey-bold"><strong>elit.</strong></span>
+                                Malesuada nibh quam nunc venenatis cursus integer amet.
+                            </p>
+                        </div>
+                    </div>          
+                </div>
+                
+            </div>
+        </section>
+        <%@include file="footer.jsp" %> 
 </body>
 </html>

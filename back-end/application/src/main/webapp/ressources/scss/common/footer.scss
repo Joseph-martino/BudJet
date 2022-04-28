@@ -1,0 +1,47 @@
+@import "fonts";
+@import "colours";
+
+footer {
+    background-color: $policeBlue;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Roboto light";
+    color: $white;
+    padding: 30px;
+    align-items: center;
+}
+
+.footer-panel {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    ul {
+        padding: 0;
+        list-style: none;
+        li {
+            margin: 10px 0 10px 0;
+        }
+    }
+}
+
+.footer-subtitle {
+    font-family: "Roboto Bold";
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+.footer-horizontal-separation {
+    background-color: $white;
+    height: 2px;
+    width: 50%;
+}
+
+.social-media-icon-container {
+    display: flex;
+    justify-content: space-around;
+    img {
+        height: 50px;
+        width: auto;
+        margin: 20px;
+    }
+}

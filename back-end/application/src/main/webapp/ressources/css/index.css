@@ -114,6 +114,71 @@ a {
     top: 8%;
     left: 15%; }
 
+@font-face {
+  font-family: "Inter Extra Light";
+  src: url("../fonts/Inter/Inter-ExtraLight.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Inter regular";
+  src: url("../fonts/Inter/Inter-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Inter Bold";
+  src: url("../fonts/Inter/Inter-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Roboto Bold";
+  src: url("../fonts/roboto/Roboto-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Roboto light";
+  src: url("../fonts/roboto/Roboto-Light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Roboto thin";
+  src: url("../fonts/roboto/Roboto-Thin.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Roboto-LightItalic";
+  src: url("../fonts/roboto/Roboto-LightItalic.ttf") format("truetype"); }
+
+footer {
+  background-color: #194E65;
+  display: flex;
+  justify-content: space-around;
+  font-family: "Roboto light";
+  color: #FFFFFF;
+  padding: 30px;
+  align-items: center; }
+
+.footer-panel {
+  display: flex;
+  flex-direction: column;
+  height: 100%; }
+  .footer-panel ul {
+    padding: 0;
+    list-style: none; }
+    .footer-panel ul li {
+      margin: 10px 0 10px 0; }
+
+.footer-subtitle {
+  font-family: "Roboto Bold";
+  text-transform: uppercase;
+  margin: 10px 0; }
+
+.footer-horizontal-separation {
+  background-color: #FFFFFF;
+  height: 2px;
+  width: 50%; }
+
+.social-media-icon-container {
+  display: flex;
+  justify-content: space-around; }
+  .social-media-icon-container img {
+    height: 50px;
+    width: auto;
+    margin: 20px; }
+
 section {
   margin: 50px 0 50px 0; }
 
@@ -140,6 +205,16 @@ section {
   color: #34B0F5;
   font-size: 4rem;
   margin: 0; }
+
+.main-banner-cta-button {
+  background-color: #769DD7;
+  color: #FFFFFF;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 15px; }
+  .main-banner-cta-button:hover {
+    background-color: #3467b3; }
 
 .first-section {
   display: flex;
@@ -172,12 +247,6 @@ section {
   display: flex;
   width: 85%; }
 
-.side-line {
-  background-color: #0047FF;
-  height: 202px;
-  width: 12px;
-  margin: 20px; }
-
 .first-section-text-container {
   display: flex;
   flex-direction: column; }
@@ -208,13 +277,16 @@ section {
 .card > p {
   text-align: center; }
 
+.margin {
+  margin: 200px; }
+
 .third-section-main-wrapper {
   position: relative; }
   .third-section-main-wrapper img {
     position: absolute;
     bottom: 0;
-    right: 0;
-    width: 25%; }
+    right: 5%;
+    width: 35%; }
 
 .blue-background-container {
   background-color: RGBA(52, 176, 245, 0.6);
@@ -226,11 +298,22 @@ section {
   background-color: #2FADF3; }
 
 .third-section-text-part {
-  display: flex; }
+  display: flex;
+  width: 465px;
+  height: 100%;
+  align-items: center;
+  margin: 0 200px; }
 
 .third-section-text-section {
   display: flex;
   flex-direction: column; }
+  .third-section-text-section h3 {
+    font-family: "Inter Extra Light";
+    font-size: 1.8rem;
+    padding-left: 30px; }
+  .third-section-text-section p {
+    border-left: solid 2px #474747;
+    padding-left: 30px; }
 
 .advantages-section {
   display: flex;
@@ -261,3 +344,15 @@ section {
     font-size: 1.6rem; }
   .advantages-row-text-container p {
     width: 50%; }
+
+.fourth-section-picture {
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  width: 29%; }
+
+.fourth-section-blue-background-container {
+  display: flex;
+  justify-content: flex-end;
+  background-color: RGBA(52, 176, 245, 0.6);
+  height: 500px; }

@@ -114,6 +114,71 @@ a {
     top: 8%;
     left: 15%; }
 
+@font-face {
+  font-family: "Inter Extra Light";
+  src: url("../fonts/Inter/Inter-ExtraLight.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Inter regular";
+  src: url("../fonts/Inter/Inter-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Inter Bold";
+  src: url("../fonts/Inter/Inter-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Roboto Bold";
+  src: url("../fonts/roboto/Roboto-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Roboto light";
+  src: url("../fonts/roboto/Roboto-Light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Roboto thin";
+  src: url("../fonts/roboto/Roboto-Thin.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Roboto-LightItalic";
+  src: url("../fonts/roboto/Roboto-LightItalic.ttf") format("truetype"); }
+
+footer {
+  background-color: #194E65;
+  display: flex;
+  justify-content: space-around;
+  font-family: "Roboto light";
+  color: #FFFFFF;
+  padding: 30px;
+  align-items: center; }
+
+.footer-panel {
+  display: flex;
+  flex-direction: column;
+  height: 100%; }
+  .footer-panel ul {
+    padding: 0;
+    list-style: none; }
+    .footer-panel ul li {
+      margin: 10px 0 10px 0; }
+
+.footer-subtitle {
+  font-family: "Roboto Bold";
+  text-transform: uppercase;
+  margin: 10px 0; }
+
+.footer-horizontal-separation {
+  background-color: #FFFFFF;
+  height: 2px;
+  width: 50%; }
+
+.social-media-icon-container {
+  display: flex;
+  justify-content: space-around; }
+  .social-media-icon-container img {
+    height: 50px;
+    width: auto;
+    margin: 20px; }
+
 .main-banner-container {
   background-image: url("../images/banners/profile-banner.png");
   background-size: cover;
@@ -332,7 +397,8 @@ table {
 .delete-account-button-container {
   display: flex;
   justify-content: flex-end;
-  margin-top: 30px; }
+  margin-top: 30px;
+  margin-bottom: 30px; }
   .delete-account-button-container button {
     background-color: #FE5656;
     color: #FFFFFF;

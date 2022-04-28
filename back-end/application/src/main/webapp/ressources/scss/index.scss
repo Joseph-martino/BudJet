@@ -1,6 +1,9 @@
 @import "common/fonts";
 @import "common/reset";
+@import "common/colours";
+@import "common/mixins";
 @import "common/header";
+@import "common/footer";
 
 section {
     margin: 50px 0 50px 0;
@@ -33,6 +36,14 @@ section {
     color: $brightBlue;
     font-size: 4rem;;
     margin:0;
+}
+
+.main-banner-cta-button {
+    @include button($vistaBlue);
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px;
 }
 
 .first-section {
@@ -70,13 +81,6 @@ section {
 .first-section-text-part {
     display: flex;
     width: 85%;
-}
-
-.side-line {
-    background-color: $blue;
-    height: 202px;
-    width: 12px;
-    margin: 20px;
 }
 
 .first-section-text-container {
@@ -117,13 +121,17 @@ section {
     text-align: center;
 }
 
+.margin {
+    margin: 200px;
+}
+
 .third-section-main-wrapper {
     position: relative;
     img {
         position: absolute;
         bottom: 0;
-        right: 0;
-        width: 25%;   
+        right: 5%;
+        width: 35%;  
     }
 }
 
@@ -140,11 +148,24 @@ section {
 
 .third-section-text-part {
     display: flex;
+    width: 465px;
+    height: 100%;
+    align-items: center;
+    margin: 0 200px;
 }
 
 .third-section-text-section {
     display: flex;
     flex-direction: column;
+    h3 {
+        font-family: "Inter Extra Light";
+        font-size: 1.8rem;
+        padding-left: 30px;
+    }
+    p {
+        border-left: solid 2px $outerSpace;
+        padding-left: 30px;
+    }
 }
 
 .advantages-section {
@@ -183,4 +204,18 @@ section {
     p {
         width: 50%;
     }
+}
+
+.fourth-section-picture {
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    width: 29%;
+}
+
+.fourth-section-blue-background-container {
+    display: flex;
+    justify-content: flex-end;
+    background-color: RGBA(52, 176, 245, 0.6);
+    height: 500px;
 }

@@ -23,7 +23,7 @@
 		<h1 class="signup-title">Rejoignez-nous</h1>
 		<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
 
-		<form action="" method="POST">
+		<form action="signup" method="POST">
 			<label for="group">Groupe:</label> <input type="text" id="group"
 				name="group"> <label for="email-adress">Adresse
 				email:</label> <input type="text" id="email-adress" name="mail"> <label
