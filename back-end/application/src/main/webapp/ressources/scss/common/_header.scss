@@ -1,4 +1,6 @@
 @import "fonts";
+@import "colours";
+@import "mixins";
 
 .header-nav-bar {
     display: flex;
@@ -25,15 +27,14 @@
 }
 
 a{
-	color: white;
+	color: $white;
     text-decoration: none;
     text-transform: uppercase;
     font-family: "Roboto thin";
 }
 
 .blue-button {
-    background-color: #3848D3;
-    color: white;
+    @include button($vistaBlue);
     padding: 4px 3px 3px 13px;
     border-radius: 60px;
     text-decoration: none;
@@ -52,7 +53,7 @@ a{
     border-radius: 50%;
     position: relative;
     margin-left: 20px;
-    background-color: white;
+    background-color: $white;
 	    img {
 		position: absolute;
 	    top: 8%;

@@ -10,7 +10,7 @@
 </head>
 <body>
 	<section class="form-panel">
-		<h1>Bon retour parmi nous</h1>
+		<h1 class="login-title">Bon retour parmi nous</h1>
 		<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
 
 		<form action="" method="POST">
@@ -32,7 +32,7 @@
 		</form>
 		<p class="bottom-message">
 			Vous n'avez pas de compte ? Cliquez <a class="bottom-link"
-				href="signup.html">ici</a>
+				href="signup.jsp">ici</a>
 		</p>
 	</section>
 

@@ -20,7 +20,7 @@
 	</section>
 
 	<section class="form-panel">
-		<h1>Rejoignez-nous</h1>
+		<h1 class="signup-title">Rejoignez-nous</h1>
 		<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
 
 		<form action="" method="POST">
@@ -47,7 +47,7 @@
 		</form>
 		<p class="bottom-message">
 			Vous n'avez pas de compte ? Cliquez <a class="bottom-link"
-				href="login.html">ici</a>
+				href="login.jsp">ici</a>
 		</p>
 	</section>
 	<%@include file="header.jsp" %> 

@@ -82,18 +82,20 @@ html, body {
   align-items: center; }
 
 a {
-  color: white;
+  color: #FFFFFF;
   text-decoration: none;
   text-transform: uppercase;
   font-family: "Roboto thin"; }
 
 .blue-button {
-  background-color: #3848D3;
-  color: white;
+  background-color: #769DD7;
+  color: #FFFFFF;
   padding: 4px 3px 3px 13px;
   border-radius: 60px;
   text-decoration: none;
   font-weight: bold; }
+  .blue-button:hover {
+    background-color: #3467b3; }
 
 .login-signup-link {
   display: flex;
@@ -106,7 +108,7 @@ a {
   border-radius: 50%;
   position: relative;
   margin-left: 20px;
-  background-color: white; }
+  background-color: #FFFFFF; }
   .profile-icon-container img {
     position: absolute;
     top: 8%;
@@ -132,6 +134,12 @@ label, .bottom-message {
   font-family: "Roboto light";
   color: #717171; }
 
+.signup-title {
+  margin-top: 160px; }
+
+.login-title {
+  margin: 0; }
+
 .form-panel {
   display: flex;
   justify-content: center;
@@ -142,8 +150,7 @@ label, .bottom-message {
   color: #0772EF;
   text-transform: uppercase;
   font-family: "Roboto Bold";
-  font-size: 3rem;
-  margin: 0; }
+  font-size: 3rem; }
 
 .form-panel h2 {
   font-family: "Roboto thin";

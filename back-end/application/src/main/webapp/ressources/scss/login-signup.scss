@@ -26,6 +26,14 @@ label, .bottom-message {
     color: #717171;
 }
 
+.signup-title {
+	margin-top: 160px;
+}
+
+.login-title {
+	margin: 0;
+}
+
 .form-panel {
     display: flex;
     justify-content: center;
@@ -38,7 +46,6 @@ label, .bottom-message {
     text-transform: uppercase;
     font-family: "Roboto Bold";
     font-size: 3rem;
-    margin: 0;
 }
 
 .form-panel h2{

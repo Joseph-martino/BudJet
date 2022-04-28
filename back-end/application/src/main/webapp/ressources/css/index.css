@@ -82,18 +82,20 @@ html, body {
   align-items: center; }
 
 a {
-  color: white;
+  color: #FFFFFF;
   text-decoration: none;
   text-transform: uppercase;
   font-family: "Roboto thin"; }
 
 .blue-button {
-  background-color: #3848D3;
-  color: white;
+  background-color: #769DD7;
+  color: #FFFFFF;
   padding: 4px 3px 3px 13px;
   border-radius: 60px;
   text-decoration: none;
   font-weight: bold; }
+  .blue-button:hover {
+    background-color: #3467b3; }
 
 .login-signup-link {
   display: flex;
@@ -106,15 +108,17 @@ a {
   border-radius: 50%;
   position: relative;
   margin-left: 20px;
-  background-color: white; }
+  background-color: #FFFFFF; }
   .profile-icon-container img {
     position: absolute;
     top: 8%;
     left: 15%; }
 
+section {
+  margin: 50px 0 50px 0; }
+
 .main-banner-container {
   position: relative;
-  height: 100%;
   width: 100%; }
 
 .main-banner-picture {
@@ -126,13 +130,15 @@ a {
   left: 13%;
   width: 25%;
   font-family: Inter Extra Light;
-  color: white;
+  color: #FFFFFF;
   margin: 0; }
+  .banner-text-container h2 {
+    font-size: 1.5rem; }
 
 .main-title {
   font-family: Inter Bold;
   color: #34B0F5;
-  font-size: 2rem;
+  font-size: 4rem;
   margin: 0; }
 
 .first-section {
@@ -143,13 +149,32 @@ a {
   margin: 0 auto;
   padding: 60px; }
 
+.subtitle {
+  text-align: center;
+  font-family: "Roboto thin";
+  font-size: 2.2rem;
+  color: #474747; }
+
+.paragraph {
+  font-size: 1.1rem;
+  color: #474747;
+  font-family: "Inter Extra Light"; }
+
+.blue-bold {
+  color: #0047FF;
+  font-family: "Inter Bold"; }
+
+.grey-bold {
+  color: #474747;
+  font-family: "Inter Bold"; }
+
 .first-section-text-part {
   display: flex;
   width: 85%; }
 
 .side-line {
-  background-color: #194E65;
-  height: 180px;
+  background-color: #0047FF;
+  height: 202px;
   width: 12px;
   margin: 20px; }
 
@@ -183,6 +208,18 @@ a {
 .card > p {
   text-align: center; }
 
+.third-section-main-wrapper {
+  position: relative; }
+  .third-section-main-wrapper img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 25%; }
+
+.blue-background-container {
+  background-color: RGBA(52, 176, 245, 0.6);
+  height: 500px; }
+
 .horizontale-line {
   height: 2px;
   width: 30px;
@@ -194,3 +231,33 @@ a {
 .third-section-text-section {
   display: flex;
   flex-direction: column; }
+
+.advantages-section {
+  display: flex;
+  justify-content: space-around; }
+
+.advantages-pictures-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%; }
+  .advantages-pictures-container img {
+    width: 260px;
+    margin: 10px; }
+
+.advantages-text-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .advantages-text-row img {
+    width: 50px;
+    height: 50px; }
+
+.advantages-row-text-container {
+  color: #474747;
+  width: 75%;
+  font-family: "Inter Extra Light"; }
+  .advantages-row-text-container h3 {
+    font-size: 1.6rem; }
+  .advantages-row-text-container p {
+    width: 50%; }
