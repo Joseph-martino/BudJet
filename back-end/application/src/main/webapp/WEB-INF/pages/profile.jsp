@@ -5,11 +5,7 @@ pageEncoding="UTF-8"%>
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="ressources/css/profile.css" />
-    <link
-      rel="icon"
-      type="image/png"
-      href="ressources/images/logo/title-logo.png"
-    />
+    <link rel="icon" type="image/png" href="ressources/images/logo/title-logo.png"/>
     <script src="ressources/scripts/profile.js" defer></script>
     <title>Profil</title>
   </head>

@@ -199,12 +199,24 @@ label, .bottom-message {
   justify-content: center; }
 
 #validation-input {
-  background-color: #769DD7;
-  color: #FFFFFF;
   font-family: "Roboto Bold";
   width: 70%;
   font-size: 1.2em;
   margin: 20px; }
+
+.disabled {
+  cursor: not-allowed;
+  background-color: #769DD7;
+  color: #FFFFFF; }
+  .disabled:hover {
+    background-color: #3467b3; }
+
+.activated {
+  cursor: pointer;
+  background-color: #0772EF;
+  color: #FFFFFF; }
+  .activated:hover {
+    background-color: #04438c; }
 
 .bottom-link {
   color: #769DD7;

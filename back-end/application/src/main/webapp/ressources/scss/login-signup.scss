@@ -2,6 +2,7 @@
 @import "common/colours";
 @import "common/reset";
 @import "common/header";
+@import "common/mixins";
 
 body {
     display: flex;
@@ -107,12 +108,20 @@ label, .bottom-message {
 }
 
 #validation-input {
-    background-color: $vistaBlue;
-    color: $white;
     font-family: "Roboto Bold";
     width: 70%;
     font-size: 1.2em;
     margin: 20px;
+}
+
+.disabled {
+    cursor: not-allowed;
+    @include button($vistaBlue);
+}
+
+.activated {
+    cursor: pointer;
+    @include button($vividBlue);
 }
 
 .bottom-link{

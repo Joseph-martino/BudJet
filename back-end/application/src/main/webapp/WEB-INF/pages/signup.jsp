@@ -6,6 +6,7 @@
 <meta charset="ISO-8859-1">
 <link rel="stylesheet" href="ressources/css/login-signup.css">
 <link rel="icon" type="image/png" href="ressources/images/logo/title-logo.png">
+<script src="ressources/scripts/signup.js" defer></script>
 <title>Inscription</title>
 </head>
 <body>
@@ -40,7 +41,7 @@
 			</div>
 
 			<div class="validation-input-container">
-				<input type="submit" id="validation-input" value="S'inscrire">
+				<input class="disabled" type="submit" id="validation-input" value="S'inscrire" disabled>
 			</div>
 
 		</form>
