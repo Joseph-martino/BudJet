@@ -41,7 +41,7 @@
 			</div>
 
 			<div class="validation-input-container">
-				<input class="disabled" type="submit" id="validation-input" value="S'inscrire" disabled>
+				<input type="submit" id="validation-input" value="S'inscrire" disabled>
 			</div>
 
 		</form>

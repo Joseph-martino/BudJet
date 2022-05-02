@@ -33,7 +33,8 @@ CREATE TABLE spending
     id_team int NULL,
     spending_date date NULL,
     CONSTRAINT PK_SPENDING PRIMARY KEY CLUSTERED(id_spending),
-    CONSTRAINT FK_SPENDING_MEMBER FOREIGN KEY(id_member) REFERENCES member(id_member)
+    CONSTRAINT FK_SPENDING_MEMBER FOREIGN KEY(id_member) REFERENCES member(id_member),
+    CONSTRAINT FK_SPENDING_TEAM FOREIGN KEY(id_team) REFERENCES member(id_team)
 )
 GO
 

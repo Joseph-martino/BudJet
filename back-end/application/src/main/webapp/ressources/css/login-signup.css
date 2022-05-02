@@ -202,21 +202,21 @@ label, .bottom-message {
   font-family: "Roboto Bold";
   width: 70%;
   font-size: 1.2em;
-  margin: 20px; }
-
-.disabled {
-  cursor: not-allowed;
-  background-color: #769DD7;
-  color: #FFFFFF; }
-  .disabled:hover {
-    background-color: #3467b3; }
-
-.activated {
+  margin: 20px;
   cursor: pointer;
   background-color: #0772EF;
   color: #FFFFFF; }
-  .activated:hover {
+  #validation-input:hover {
     background-color: #04438c; }
+  #validation-input:disabled {
+    cursor: default;
+    background-color: #717171;
+    color: #FFFFFF; }
+    #validation-input:disabled:hover {
+      background-color: #3e3e3e; }
+
+.error-input {
+  border: solid 1px #F93636; }
 
 .bottom-link {
   color: #769DD7;
