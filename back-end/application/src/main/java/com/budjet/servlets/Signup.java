@@ -19,6 +19,7 @@ import com.budjet.DAO.DAOFactory;
 import com.budjet.DAO.MemberDAO;
 import com.budjet.DAO.MsSqlConnect;
 import com.budjet.models.Member;
+import com.budjet.services.AuthenticationService;
 import com.budjet.utils.Strings;
 
 
@@ -50,8 +51,6 @@ public class Signup extends HttpServlet {
 		String cleanedMail = cleanString(mail);
 		String cleanedPassword = cleanString(password);
 		
-		MemberDAO memberDao = DAOFactory.createMemberDAO();
-		
 		ServletContext context = this.getServletContext();
 		String path = context.getContextPath();
 			
@@ -60,11 +59,9 @@ public class Signup extends HttpServlet {
 				&& !Strings.isEmptyOrBlank(cleanedMail)
 				&& !Strings.isEmptyOrBlank(cleanedPassword)) {
 			
-			if(memberDao.checkIfEmailExist(cleanedMail)) {
-				return;
-			}
-
-			memberDao.register(cleanedGroupName, cleanedPseudo, cleanedMail, cleanedPassword);
+			AuthenticationService authenticationService = new AuthenticationService();
+			authenticationService.register(cleanedGroupName, cleanedPseudo, cleanedMail, cleanedPassword);
+			
 	
 			response.sendRedirect(path + "/profile");
 		} else {
@@ -73,21 +70,9 @@ public class Signup extends HttpServlet {
 		}
 	}
 
-	private String cleanString(String string) {
+	private static String cleanString(String string) {
 		return string.replaceAll("<[^>]*>", "");
 	}
 
-//	private boolean register(HttpServletRequest request, HttpServletResponse response,
-//			String group, String pseudo, String email, String password, String passwordConfirmation) {
-//		if(request.getParameter(message) != null && request.getParameter(pseudo) != null && request.getParameter(email) != null
-//				&& request.getParameter(password) != null && request.getParameter(passwordConfirmation) != null) {
-//			this.getServletContext().getRequestDispatcher("/WEB-INF/pages/profile.jsp").forward(request,response);
-//			
-//		}
-//		
-//		
-//		return false;
-//		
-//	}
 
 }

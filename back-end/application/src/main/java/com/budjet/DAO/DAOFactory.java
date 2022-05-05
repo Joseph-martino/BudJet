@@ -8,5 +8,9 @@ public class DAOFactory {
 	public static MemberDAO createMemberDAO() {
 		return new MemberDAO(connexion);
 	}
+	
+	public static TeamDAO createTeamDAO() {
+		return new TeamDAO(connexion);
+	}
 
 }

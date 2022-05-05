@@ -3,17 +3,17 @@ package com.budjet.DAO;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.List;
 
 import com.budjet.models.Member;
+import com.budjet.utils.DAOUtils;
 
 public class MemberDAO extends DAO<Member> {
 
 	public MemberDAO(Connection connexion) {
 		super(connexion);
-		
+
 	}
 
 	@Override
@@ -42,7 +42,7 @@ public class MemberDAO extends DAO<Member> {
 			e.printStackTrace();
 
 		} finally {
-			closeStatement(resultSet, preparedStatement);
+			DAOUtils.closeStatement(preparedStatement, resultSet);
 		}
 		return member;
 
@@ -64,63 +64,60 @@ public class MemberDAO extends DAO<Member> {
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
-			closeStatement(resultSet, preparedStatement);
+			DAOUtils.closeStatement(preparedStatement, resultSet);
 		}
 
 		return false;
 	}
-
-	public boolean register(String teamName, String pseudo, String email, String password) {
-
+	
+	/**
+	 * 
+	 * @param pseudo
+	 * @param email
+	 * @param password
+	 * @param teamId
+	 * @return returns id or -1
+	 */
+	public int createMember(String pseudo, String email, String password, int teamId) {
 		PreparedStatement preparedStatement = null;
-
+		ResultSet resultSet = null;
+		int id = -1;
 		try {
-
-			String teamQuery = "INSERT INTO team VALUES(?)";
-			PreparedStatement teamPreparedStatement = getConnexion().prepareStatement(teamQuery, Statement.RETURN_GENERATED_KEYS);
-			teamPreparedStatement.setString(1, teamName);
-			teamPreparedStatement.executeUpdate();
-			ResultSet teamIdAsResultSet = teamPreparedStatement.getGeneratedKeys();
-			if(!teamIdAsResultSet.next()){
-				return false;
-			}
-
 			String query = "INSERT INTO member VALUES(?, ?, ?, null, ?)";
 			preparedStatement = getConnexion().prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
 			preparedStatement.setString(1, pseudo);
 			preparedStatement.setString(2, email);
 			preparedStatement.setString(3, password);
-			preparedStatement.setInt(4, teamIdAsResultSet.getInt(1));
-			
+			preparedStatement.setInt(4, teamId);
 			preparedStatement.executeUpdate();
-
-			return true;
-
-		} catch (Exception e) {
+			resultSet = preparedStatement.getGeneratedKeys();
+			if(resultSet.next()) {
+				id = resultSet.getInt(1);
+			}	
+		} catch(Exception e) {
 			e.printStackTrace();
-			return false;
-		} finally {
-			closeStatement(preparedStatement);
-		}
-
+		}	
+		return id;
 	}
-	
+
 	public boolean checkIfEmailExist(String mail) {
 		PreparedStatement preparedStatement = null;
 		ResultSet resultSet = null;
-		
+
 		try {
-			String query = "SELECT COUNT(*) OCC FROM member WHERE email = ?"; 
+			String query = "SELECT COUNT(*) OCC FROM member WHERE email = ?";
 			preparedStatement = getConnexion().prepareStatement(query);
 			preparedStatement.setString(1, mail);
 			resultSet = preparedStatement.executeQuery();
-			if(resultSet.next() && resultSet.getInt(1) == 0) {
+			if (resultSet.next() && resultSet.getInt(1) == 0) {
 				return false;
 			}
-		}catch(Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
+		} finally {
+			DAOUtils.closeStatement(preparedStatement, resultSet);
 		}
-		
+
 		return true;
 	}
 
@@ -134,34 +131,6 @@ public class MemberDAO extends DAO<Member> {
 	public boolean delete() {
 		// TODO Auto-generated method stub
 		return false;
-	}
-
-	private void closeStatement(ResultSet resultSet, PreparedStatement preparedStatement) {
-		try {
-			if (resultSet != null && !resultSet.isClosed()) {
-				resultSet.close();
-			}
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-		try {
-			if (preparedStatement != null && !preparedStatement.isClosed()) {
-				preparedStatement.close();
-			}
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-	}
-	
-	private void closeStatement(PreparedStatement preparedStatement) {
-
-		try {
-			if (preparedStatement != null && !preparedStatement.isClosed()) {
-				preparedStatement.close();
-			}
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
 	}
 
 }
