@@ -12,6 +12,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.apache.commons.lang3.StringUtils;
 
@@ -60,9 +61,9 @@ public class Signup extends HttpServlet {
 				&& !Strings.isEmptyOrBlank(cleanedPassword)) {
 			
 			AuthenticationService authenticationService = new AuthenticationService();
-			authenticationService.register(cleanedGroupName, cleanedPseudo, cleanedMail, cleanedPassword);
+			int userId = authenticationService.register(cleanedGroupName, cleanedPseudo, cleanedMail, cleanedPassword);
+			HttpSession userSession = createSession(request, userId, cleanedPseudo, cleanedMail, cleanedGroupName);
 			
-	
 			response.sendRedirect(path + "/profile");
 		} else {
 			
@@ -72,6 +73,17 @@ public class Signup extends HttpServlet {
 
 	private static String cleanString(String string) {
 		return string.replaceAll("<[^>]*>", "");
+	}
+	
+	private HttpSession createSession(HttpServletRequest request, int userId, String pseudo, String email, String groupName) {
+		HttpSession session = request.getSession();
+		session.setAttribute("userId", userId);
+		session.setAttribute("username", pseudo);
+		session.setAttribute("email", email);
+		session.setAttribute("groupName", groupName);
+		session.setAttribute("userBudget", 0);
+		session.setAttribute("userSpending", 0);
+		return session;
 	}
 
 

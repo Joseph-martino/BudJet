@@ -28,10 +28,10 @@ GO
 CREATE TABLE spending
 (
     id_spending int IDENTITY(1,1) NOT NULL,
-    amount float NULL,
-    id_member int NULL,
-    id_team int NULL,
-    spending_date date NULL,
+    amount float NOT NULL,
+    id_member int NOT NULL,
+    id_team int NOT NULL,
+    spending_date date DEFAULT GETUTCDATE() NOT NULL,
     CONSTRAINT PK_SPENDING PRIMARY KEY CLUSTERED(id_spending),
     CONSTRAINT FK_SPENDING_MEMBER FOREIGN KEY(id_member) REFERENCES member(id_member),
     CONSTRAINT FK_SPENDING_TEAM FOREIGN KEY(id_team) REFERENCES member(id_team)
@@ -41,10 +41,10 @@ GO
 CREATE TABLE budget
 (
     id_budget int IDENTITY(1,1) NOT NULL,
-    amount float NULL,
-    budget_date date NULL,
-    id_member int NULL,
-    id_team int NULL,
+    amount float DEFAULT 0,
+    budget_date date DEFAULT GETUTCDATE() NOT NULL,
+    id_member int NOT NULL,
+    id_team int NOT NULL,
     CONSTRAINT PK_BUDGET PRIMARY KEY CLUSTERED (id_budget),
     CONSTRAINT FK_BUDGET_MEMBER FOREIGN KEY(id_member) REFERENCES member(id_member),
     CONSTRAINT FK_BUDGET_TEAM FOREIGN KEY(id_team) REFERENCES team(id_team)

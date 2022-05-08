@@ -37,8 +37,11 @@ pageEncoding="UTF-8"%>
       </div>
 
       <div class="user-informations-container">
-        <h1>Hanuman</h1>
-        <h2>Nom du groupe</h2>
+      <c:if Signup="${ !empty sessionScope.username && !empty sessionScope.email && !empty sessionScope.groupName }">
+      	<h1>${sessionScope.username}</h1>
+      	<h2>${sessionScope.groupName}</h2>
+      </c:if>
+       
       </div>
     </section>
 

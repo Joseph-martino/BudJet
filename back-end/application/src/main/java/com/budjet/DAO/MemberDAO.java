@@ -120,6 +120,10 @@ public class MemberDAO extends DAO<Member> {
 
 		return true;
 	}
+	
+	public void insertImage() {
+		
+	}
 
 	@Override
 	public boolean update() {
